@@ -1,3 +1,5 @@
+Once upon a time I had this great vision of creating nice website for myself. Since than many ideas had come and go, but mostly I cannot find time to finish this as other projects are on they way.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

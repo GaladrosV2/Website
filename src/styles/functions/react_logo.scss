@@ -1,0 +1,34 @@
+.orbit {
+    height: 4.25rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 0.325rem solid #61DAFB;
+    transition: 1s;
+  }
+  .react {
+    @extend .orbit;
+    background: radial-gradient(circle, #61DAFB 15%, transparent 15%);
+    position: relative;
+    top:13%;
+    animation: rotate 15s infinite linear;
+    &:before,
+    &:after {
+      content: "";
+      @extend .orbit;
+      position: absolute;
+      left: -0.525rem;
+      top: -0.525rem;
+    }
+    &:before {
+      transform: rotate(60deg)
+    }
+    &:after {
+      transform: rotate(120deg)
+    }
+    
+  }
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }

@@ -1,0 +1,95 @@
+@import 'functions/react_logo';
+
+section.technologies{
+    position:relative;
+    max-width: 1600px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+div.containterH2{
+    background: url(https://cdn.discordapp.com/attachments/1073645784538550312/1077604004139389038/Galadros_Dark_fantasy_Lovecraft_Greg_Rutkowski_Great_Cthulhu_de_ddbb3f00-2edd-4063-985c-19be596009a2.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    background-position: -50% 25%;
+}
+
+.containerh2 div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.feature {
+    height: 50%;
+    width: 33.333%;
+    background: $gold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.technologies h2{
+    position:absolute;
+    top:0;
+}
+
+
+.technologies div:nth-of-type(2){
+    background: url(https://media.discordapp.net/attachments/1073418517044543580/1082364240859508778/Galadros_soft_coloured_background_with_light_in_the_background__15df17e6-cbcf-47df-88cb-462576ae4c0d.png?width=669&height=669)no-repeat;
+    background-size: 100%;
+    transition:background-size 1s;
+    background-position: 50% 50%;
+    
+    &:hover{
+        .orbit {
+            width: 13rem;
+            border: 0.525rem solid #61DAFB;
+        }
+    }
+}
+
+.technologies div:nth-of-type(3){
+    background: url(https://cdn.discordapp.com/attachments/1073645784538550312/1077603922316906526/Galadros_Dark_fantasy_Lovecraft_Greg_Rutkowski_Great_Cthulhu_de_70ebef12-19fa-481e-bc49-de465aa5e8e6.png) 
+    no-repeat;
+    background-size: 200%;
+    transition:background-size 1s;
+    background-position: 50% 50%;
+    &:hover{
+        background-size: 260%;
+        background-position: 50% 50%;
+    }
+}
+
+.technologies div:nth-of-type(4) {
+    background: url(https://media.discordapp.net/attachments/1073418517044543580/1082361068250210364/Galadros_Digitally_illustrated_rpg_character_sheet_soft_coloure_5edce3c9-0817-41d9-ad5b-80931f21da66.png?width=669&height=669) no-repeat;
+    background-size: 100%;
+    transition:background-size 1s;
+    background-position: 50% 50%;
+}
+
+.technologies div:nth-of-type(5) {
+    background: url(https://media.discordapp.net/attachments/1073418517044543580/1082368713468166215/Galadros_Artifical_Inteligence_Volumetric_Lighting_sharp_hyperr_26e6492b-6fde-48dd-a6d3-cc7ea5094005.png?width=669&height=669) no-repeat;
+    background-size: 100%;
+    background-position-y: 38.5%;
+    height:25vh;
+    width:100%;
+    transition: background-size 1s;
+    background-position-x: 50%;
+    &:hover{
+        background-size: 130%;
+        background-position-x: 50%;
+    }
+}
+
+.technologies div:nth-of-type(2):hover,
+.technologies div:nth-of-type(4):hover{
+    background-size: 130%;
+    background-position: 50% 50%;
+}

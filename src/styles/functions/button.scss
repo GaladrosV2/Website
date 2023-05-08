@@ -1,0 +1,35 @@
+// Animate the size, outside
+.pulse {  
+  color: $emerald;
+  transition: 0.25s;
+&:hover, 
+&:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+  border-color: $emerald;
+      color: #fff;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0  $emerald; }
+}
+
+$colors: (
+    fill: $emerald,
+    pulse: $emerald, 
+    close: $emerald, 
+    raise: $emerald, 
+    up: $emerald, 
+    slide: $emerald, 
+    offset: $emerald
+  );
+
+@each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 45deg)};
+    }
+  }
+}
+
+

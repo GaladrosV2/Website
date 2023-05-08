@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'header';
+@import 'technologies';
+@import 'slogan';
+@import 'contact';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+}    
+
+body {    
+    color: #fff;
+    background: $black;
+    max-width:1600px;
+    font: 300 2.5rem 'Fira Sans', sans-serif;
+    // Center everything ever
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex; 
+}
+// Basic button styles, more in functions/button.scss
+button {
+    background: none;
+    border: 1px solid $black;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+h1 {
+    background-color: $black;
+    width:100%;
+    opacity: 0.8;
+}
+
+h2 {
+    background-color: $black;
+    width:100%;
+    opacity: 0.8;
+}
